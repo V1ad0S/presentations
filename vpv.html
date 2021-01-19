@@ -26,15 +26,87 @@
 					<p align="right">Илларионов Владислав Иванович</p>
 				</section>
 				
-				<section>
-					<h3>Теоретические основы синхронизации мод</h3>
-					<br>
-					<p>
-						Полное электрическое поле $E(t)$ электромагнитной волны в резонаторе с $2n+1$ поперечными модами
-					</p>
-					\[ E(t) = \sum_{l=-n}^n E_0 exp(i \omega_l t + \varphi_l)\]
+				<section title="Теоретические основы синхронизации мод">
+					<section>
+						<h3>Теоретические основы синхронизации мод</h3>
+						<br>
+						<span class="fragment">
+							<p align="left">
+								Полное электрическое поле $E(t)$ электромагнитной волны в резонаторе с $2n+1$ поперечными модами
+							</p>
+							\[ E(t) = \sum_{l=-n}^n E_0 exp(i \omega_l t + \varphi_l)\]
+						</span>
+						
+						<span class="fragment">
+							<p align="left">Условие синхронизации фаз</p>
+							\[ \varphi_{l+1} - \varphi_{l} = \varphi = \text{const}, \quad l = -n, ..., n, \quad (\varphi_0 = 0) \]
+							\[ E(t) = \sum\limits_{l = -n}^{n} E_0 \exp \left( i (\omega_0 + l \Delta \omega) t + l \varphi \right) \]
+						</span>
+						
+						<p class="fragment" align="left">В общем случае фазы $\varphi_l$ являются случайными величинами.</p>
+					</section>
+					
+					<section>
+						<h3>Теоретические основы синхронизации мод</h3>
+						<br>
+						<img src="images/1.png" width="1000">
+						<font size="6">
+							<p>
+								Зависимость приведенной интенсивности $I(t) = |E(t)|^2/|E_0|^2$ от времени в неодимовом лазере <b>Nd$^{3+}$:YAg</b>.
+							</p>
+							<p>
+								Число мод $2n+1 = 31$. Межмодовое расстояние $\Delta \nu = 100$ МГц.
+								Центральная частота $\nu = 2{,}82 \cdot 10^{14}$ Гц ($\lambda = 1{,}064$ мкм)
+							</p>
+						</font>
+					</section>
+
+					<section>
+						<h3>Теоретические основы синхронизации мод</h3>
+						<br>
+						
+						<span class="fragment" >
+							<p align="left">Представление электрического поля в виде синусоиды с модулированной по времени амплитудой</p>
+							\[ E(t) = A(t) \exp \left( i \omega_0 t \right), \quad A(t) = \sum\limits_{l = -n}^{n} E_0 \exp \left( i l ( \Delta \omega t + \varphi) \right) \]	
+						</span>
+					
+						<span class="fragment">
+							<p align="left">Замена переменных</p>
+							\[\Delta \omega t' = \Delta \omega t + \varphi\]
+						</span>
+
+						<span class="fragment">
+							<p align="left">Сумма геометрической прорессии</p>
+							\[A(t') = E_0 \frac{\sin((2n+1) \Delta \omega t' / 2)}{\sin(\Delta \omega t' / 2)}\]
+						</span>
+					</section>
+
+					<section>
+						<h3>Теоретические основы синхронизации мод</h3>
+						<br>
+						
+						<img src="images/2.png" width="1000">
+						<font size="6">
+							<p>Синхронизация мод в неодимовом лазере. Параметры лазера совпадают с параметрами,</p>
+							<p>использованными в зависимости $I(t)$ для случайного распределения мод.</p>
+						</font>
+					</section>
+
+					<section>
+						<img src="images/anim.gif" width="1500">
+					</section>
 				</section>
-				<section>Slide 3</section>
+
+				<section>
+					<h3>Методы синхронизации мод</h3>
+					<br>
+
+					<ul>
+						<li class="fragment"> <u>активная синхронизация мод</u> &mdash; потери или усиление в резонаторе модулируются внешним сигналом;</li>
+						<li class="fragment"> <u>пассивная синхронизация мод</u> &mdash; внутрь резонатора помещается нелинейный оптический элемент,
+								за счёт которого осуществляется синхронизация мод.</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
