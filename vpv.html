@@ -109,7 +109,7 @@
 
 				<section title="Активная синхронизация мод">
 					<section>
-						<h3>Активная синхронизация мод</h3>
+						<h4>Амлитудная модуляция как метод активной синхронизации мод</h4>
 						<br>
 
 						<img src="images/5.png" width="1500">
@@ -133,8 +133,9 @@
 					</section>
 
 					<section>
-						<font size="7">
-							<div>
+						<h3>Дисперсия в конденсированной среде</h3><br>
+						<font size="6">
+							<div class="fragment">
 								<p align="left">Выражение для коэффициента электрической проницаемости</p>
 								\[\varepsilon(\omega) = 1 + \frac{4\pi N e^2}{m} \frac{1}{\omega_1^2 - \omega^2 - 2i \omega \gamma}\]
 							</div>
@@ -156,7 +157,8 @@
 					</section>
 
 					<section>
-						<div>
+						<h3>Усиление за полный проход активной среды</h3><br>
+						<div class="fragment">
 							\[A_2(\omega) = A_1(\omega) \left[ g(\omega) \right]^2\]
 							<br>
 						</div>
@@ -206,6 +208,49 @@
 							Выполняя необходимые преобразования, получаем, что самосогласованность решения удовлетворяется при $\alpha = 0$
 						</p>
 					</section>
+				</section>
+
+				<section>
+					<h3>Электрооптический эффект Керра</h3><br>
+
+					<div class="fragment">
+						<p align="left">Для $i$-ой компоненты вектора поляризации ($i=\lbrace x, y, z\rbrace$) справедливо представление</p>
+						\[P_i = \chi_{ij}^{(1)} E_j + \chi_{ijk}^{(2)} E_j E_k + \chi_{ijkl}^{(3)} E_j E_k E_l + ...\]
+					</div>
+
+					<div class="fragment">
+						<p align="left">Показатель преломления в среде с керровской нелинейностью</p>
+						\[n = n_0 + \frac{3 \chi^{(3)}}{8 n_0^2} |{\bf{E}}_0|^2 = n_0 + n_2 I\]
+					</div>
+				</section>
+
+				<section>
+					<h3>Прохождение гауссова пучка в керровской среде</h3><br>
+
+					<div class="fragment">
+						<p>Гауссов профиль интенсивности</p>
+						\[I(r) = I_0 \exp \left( -\frac{2 r^2}{w^2} \right)\]
+					</div>
+
+					<div class="fragment">
+						<p>Нелинейный сдвиг фазы, получаемый при прохождении пучка среды длиной $l$</p>
+						\[\delta \varphi = \frac{2 \pi}{\lambda} l \delta n = \frac{2 \pi}{\lambda} n_2 I_0 l \left(1 - \frac{2 r^2}{w^2} \right)\]
+					</div>
+
+					<div class="fragment">
+						<p align="left" style="border: 3px solid pink; padding: 10px 10px 10px 60px;">
+							В первом порядке по $r/w$ сдвиг фазы $\delta \varphi$ может быть описан параболической функцией параметра $r/w$, что эквивалентно появлению сфе­рической линзы в среде под действием оптического эффекта Керра.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Пассивная синхронизация мод с использованием ячейки Керра</h3><br>
+
+					<img src="images/10.png" width="1000">
+					<font size="6">
+						<p>Нелинейный элемент с потерями, использующий оптический эффект Керра</p>
+					</font>
 				</section>
 			</div>
 		</div>
