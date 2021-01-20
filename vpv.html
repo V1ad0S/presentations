@@ -30,18 +30,18 @@
 					<section>
 						<h3>Теоретические основы синхронизации мод</h3>
 						<br>
-						<span class="fragment">
+						<div class="fragment">
 							<p align="left">
 								Полное электрическое поле $E(t)$ электромагнитной волны в резонаторе с $2n+1$ поперечными модами
 							</p>
 							\[ E(t) = \sum_{l=-n}^n E_0 exp(i \omega_l t + \varphi_l)\]
-						</span>
+						</div>
 						
-						<span class="fragment">
+						<div class="fragment">
 							<p align="left">Условие синхронизации фаз</p>
 							\[ \varphi_{l+1} - \varphi_{l} = \varphi = \text{const}, \quad l = -n, ..., n, \quad (\varphi_0 = 0) \]
 							\[ E(t) = \sum\limits_{l = -n}^{n} E_0 \exp \left( i (\omega_0 + l \Delta \omega) t + l \varphi \right) \]
-						</span>
+						</div>
 						
 						<p class="fragment" align="left">В общем случае фазы $\varphi_l$ являются случайными величинами.</p>
 					</section>
@@ -49,7 +49,7 @@
 					<section>
 						<h3>Теоретические основы синхронизации мод</h3>
 						<br>
-						<img src="images/1.png" width="1000">
+						<img src="images/non-synchro.png" width="1100">
 						<font size="6">
 							<p>
 								Зависимость приведенной интенсивности $I(t) = |E(t)|^2/|E_0|^2$ от времени в неодимовом лазере <b>Nd$^{3+}$:YAg</b>.
@@ -65,27 +65,27 @@
 						<h3>Теоретические основы синхронизации мод</h3>
 						<br>
 						
-						<span class="fragment" >
+						<div class="fragment">
 							<p align="left">Представление электрического поля в виде синусоиды с модулированной по времени амплитудой</p>
 							\[ E(t) = A(t) \exp \left( i \omega_0 t \right), \quad A(t) = \sum\limits_{l = -n}^{n} E_0 \exp \left( i l ( \Delta \omega t + \varphi) \right) \]	
-						</span>
+						</div>
 					
-						<span class="fragment">
+						<div class="fragment">
 							<p align="left">Замена переменных</p>
 							\[\Delta \omega t' = \Delta \omega t + \varphi\]
-						</span>
+						</div>
 
-						<span class="fragment">
+						<div class="fragment">
 							<p align="left">Сумма геометрической прорессии</p>
 							\[A(t') = E_0 \frac{\sin((2n+1) \Delta \omega t' / 2)}{\sin(\Delta \omega t' / 2)}\]
-						</span>
+						</div>
 					</section>
 
 					<section>
 						<h3>Теоретические основы синхронизации мод</h3>
 						<br>
 						
-						<img src="images/2.png" width="1000">
+						<img src="images/synchro.png" width="1100">
 						<font size="6">
 							<p>Синхронизация мод в неодимовом лазере. Параметры лазера совпадают с параметрами,</p>
 							<p>использованными в зависимости $I(t)$ для случайного распределения мод.</p>
@@ -103,9 +103,109 @@
 
 					<ul>
 						<li class="fragment"> <u>активная синхронизация мод</u> &mdash; потери или усиление в резонаторе модулируются внешним сигналом;</li>
-						<li class="fragment"> <u>пассивная синхронизация мод</u> &mdash; внутрь резонатора помещается нелинейный оптический элемент,
-								за счёт которого осуществляется синхронизация мод.</li>
+						<li class="fragment"> <u>пассивная синхронизация мод</u> &mdash; внутрь резонатора помещается нелинейный оптический элемент, за счёт которого осуществляется синхронизация мод.</li>
 					</ul>
+				</section>
+
+				<section title="Активная синхронизация мод">
+					<section>
+						<h3>Активная синхронизация мод</h3>
+						<br>
+
+						<img src="images/5.png" width="1500">
+						<br>
+						<font size="6">
+							<p>Схема лазера с активной синхронизацией мод. Иллюстрация формирования ультракороткого импульса</p>
+						</font>
+					</section>
+
+					<section>
+						<h3>Прохождение импульса через активную среду</h3><br><br><br>
+
+						<div class="fragment">
+							\[A_{\text{out}}(\omega) = A_{\text{in}}(\omega) g(\omega),\]
+						</div>
+
+						<div class="fragment">
+							<p align="left">где $g(\omega)$ -- коэффициент усиления</p>
+							\[g(\omega) = \exp(ikL) = \exp \left(i \frac{\omega}{c} \sqrt{\varepsilon(\omega)}L \right)\]
+						</div>
+					</section>
+
+					<section>
+						<font size="7">
+							<div>
+								<p align="left">Выражение для коэффициента электрической проницаемости</p>
+								\[\varepsilon(\omega) = 1 + \frac{4\pi N e^2}{m} \frac{1}{\omega_1^2 - \omega^2 - 2i \omega \gamma}\]
+							</div>
+
+							<div class="fragment">
+								<p align="left">Резонансная частота $\omega_1$ смещена относительно собственной частоты молекулярного осциллятора $\Omega$</p>
+								\[\omega_1^2 = \Omega^2 - \frac{4\pi}{3} \frac{e^2}{m} N\]
+							</div>
+
+							<div class="fragment">
+								<p align="left">Для случая почти точного резонанса</p>
+								\[k = \frac{\omega}{c} \sqrt{\varepsilon(\omega)} \approx \frac{\omega}{c} - iN \frac{\sigma}{2} (1 - i (\omega - \Omega) T_2  - (\omega - \Omega)^2 T_2^2 + ...)\]
+
+								<p align="left">
+									$\sigma$ &mdash; сечение усиления на резонансном переходе со временем дефазировки $T_2$.
+								</p>
+							</div>
+						</font>
+					</section>
+
+					<section>
+						<div>
+							\[A_2(\omega) = A_1(\omega) \left[ g(\omega) \right]^2\]
+							<br>
+						</div>
+
+						<div class="fragment">
+							\[\left[ g(\omega) \right]^2 = \exp \left[ G_0 (1 - (\omega - \Omega)^2 T_2^2 \right] \exp (i \varphi(\omega)),\]
+							<p align="left">$G_0 = \sigma N L$ &mdash; полное насыщение усиления в центре резонансного перехода</p>
+							<br>
+						</div>
+
+						<div class="fragment">
+							\[\varphi(\omega) = 2 \frac{\omega}{c} L - G_0 (\omega - \Omega) T_2\]
+						</div>
+					</section>
+
+					<section>
+						<h3>Акустооптический модулятор</h3><br>
+
+						<div class="fragment">
+							\[T(t) = \frac{A_{\text{out}}(t)}{A_{\text{in}}(t)} = \exp(- m \sin^2(\omega_{\text{м}} t))\]
+						</div>
+
+						<div class="fragment">
+							<p align="left">C учётом потерь на одном из зеркал</p>
+							\[T(t) = \frac{A_3(t)}{A_2(t)} \approx \sqrt{R_1} \exp(- m \omega^2_{\text{м}} t^2)\]
+						</div>
+
+						<div class="fragment" style="border: 3px solid pink; padding: 10px">
+							<p align="left">
+								В установившемся режиме работы лазера форма импульса $A_3(t)$, совершившего полный обход по резонатору,
+								должна совпадать с формой исходного импульса $A_1(t)$
+							</p>
+
+							\[A_3(t) = A_1(t)\]
+						</div>
+					</section>
+
+					<section>
+						<h3>Поиск решения</h3><br><br><br>
+
+						<div class="fragment">
+							<p align="left">Решение уравнения следует искать в виде импульса с гауссовой огибающей и линейным изменением (чирпом) частоты во времени:</p>
+							\[A_1(t) = A \exp \left[ - \frac{1}{2} \left( \frac{t}{\tau_p} \right)^2 \right] \exp \left( -i \Omega t - i \frac{\alpha t^2}{2} \right)\]
+						</div>
+
+						<p class="fragment" align="left" style="width: 90%; border: 3px solid pink; padding: 10px; font-size: 10">
+							Выполняя необходимые преобразования, получаем, что самосогласованность решения удовлетворяется при $\alpha = 0$
+						</p>
+					</section>
 				</section>
 			</div>
 		</div>
