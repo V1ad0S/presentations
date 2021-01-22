@@ -17,7 +17,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Синхронизация мод в твердотельном лазере YAg:Nd$^{3+}$</h2>
+					<h1>Синхронизация мод в твердотельном лазере YAg:Nd$^{3+}$</h1>
 					<br>
 					<br>
 					<br>
@@ -32,7 +32,7 @@
 						<br>
 						<div class="fragment">
 							<p align="left">
-								Полное электрическое поле $E(t)$ электромагнитной волны в резонаторе с $2n+1$ поперечными модами
+								Полное электрическое поле $E(t)$ электромагнитной волны в резонаторе с $2n+1$ модами
 							</p>
 							\[ E(t) = \sum_{l=-n}^n E_0 exp(i \omega_l t + \varphi_l)\]
 						</div>
@@ -78,6 +78,9 @@
 						<div class="fragment">
 							<p align="left">Сумма геометрической прорессии</p>
 							\[A(t') = E_0 \frac{\sin((2n+1) \Delta \omega t' / 2)}{\sin(\Delta \omega t' / 2)}\]
+						</div>
+						<div class="fragment">
+							\[ A(0) = (2n + 1) E_0\]
 						</div>
 					</section>
 
@@ -130,13 +133,17 @@
 							<p align="left">где $g(\omega)$ &mdash; коэффициент усиления</p>
 							\[g(\omega) = \exp(ikL) = \exp \left(i \frac{\omega}{c} \sqrt{\varepsilon(\omega)}L \right)\]
 						</div>
-					</section>
+
+						
+						</section>
 
 					<section>
 						<h3>Дисперсия в конденсированной среде</h3><br>
 						<font size="6">
+							\[ \ddot{\bf{r}} + 2 \gamma \dot{\bf{r}} + \Omega {\bf{r}} = \frac{e}{m} {\bf{E}}_{\text{лок}}\]
+
 							<div class="fragment">
-								<p align="left">Выражение для коэффициента электрической проницаемости</p>
+								<p align="left">Выражение для коэффициента диэлектрической проницаемости</p>
 								\[\varepsilon(\omega) = 1 + \frac{4\pi N e^2}{m} \frac{1}{\omega_1^2 - \omega^2 - 2i \omega \gamma}\]
 							</div>
 
@@ -208,13 +215,21 @@
 							Выполняя необходимые преобразования, получаем, что самосогласованность решения удовлетворяется при $\alpha = 0$
 						</p>
 					</section>
+
+					<section>
+						<img src="images/gif-2.gif" width="1500">
+					</section>
+
+					<section>
+						<img src="images/gif-3.gif" width="1500">
+					</section>
 				</section>
 
 				<section>
 					<h3>Электрооптический эффект Керра</h3><br>
 
 					<div class="fragment">
-						<p align="left">Для $i$-ой компоненты вектора поляризации ($i=\lbrace x, y, z\rbrace$) справедливо представление</p>
+						<p align="left">Поляризация в нелинейном кристале</p>
 						\[P = \chi^{(1)} E + \chi^{(2)} E^2 + \chi^{(3)} E^3 + \ldots\]
 					</div>
 
